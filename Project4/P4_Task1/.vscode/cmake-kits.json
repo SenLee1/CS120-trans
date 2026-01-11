@@ -1,0 +1,33 @@
+[
+    {
+        "name": "Visual Studio 2022 Release - amd64",
+        "visualStudio": "17.0",
+        "visualStudioArchitecture": "amd64",
+        "preferredGenerator": {
+            "name": "Visual Studio 17 2022",
+            "platform": "x64",
+            "toolset": "host=x64"
+        }
+    },
+    {
+        "name": "Visual Studio 2022 - Ninja",
+        "visualStudio": "17.0",
+        "visualStudioArchitecture": "amd64",
+        "preferredGenerator": {
+            "name": "Ninja"
+        }
+    },
+    {
+        "name": "GCC (MinGW)",
+        "compilers": {
+            "C": "D:\\PATH\\mingw64\\bin\\gcc.exe",
+            "CXX": "D:\\PATH\\mingw64\\bin\\g++.exe",
+        },
+        "preferredGenerator": {
+            "name": "Ninja"
+        },
+        "environmentVariables": {
+            "PATH": "D:\\PATH\\mingw64\\bin;${env:PATH}"
+        }
+    }
+]

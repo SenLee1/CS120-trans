@@ -1,0 +1,4 @@
+JUCE/
+out/
+*.zip
+build/
