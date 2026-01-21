@@ -111,3 +111,8 @@ void MainComponent::generateSignal() {
 
   std::cout << "Generated " << chunkIndex << " chunks. Rate: " << Params::baudRate << " baud." << std::endl;
 }
+
+void MainComponent::paint(juce::Graphics &g) {
+  g.fillAll(juce::Colours::black);
+}
+void MainComponent::resized() { sendButton.setBounds(10, 10, 150, 40); }
